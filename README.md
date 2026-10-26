@@ -62,6 +62,22 @@ dsh plugin --profile desktop add github:moxiaolong/chinese-deai
 
 `desktop` 换成你的 profile 名：桌面应用是 `desktop`，网页版是 `web`，命令行是 `tui`。装完重启应用。
 
+### 网络连不上 github.com 的话
+
+DSH 装 git 依赖前会先探一次 github.com，超时 5 秒就放弃。国内网络常见，报错长这样：
+
+```text
+dsh: connection to github.com timed out after 5000ms
+```
+
+别改配置，改成从本地装：
+
+```bash
+git clone git@github.com:moxiaolong/chinese-deai.git
+```
+
+然后把克隆下来的目录地址交给 agent，让它用同一个 `install_bundle`，target 换成那个本地路径。装的是同一份东西，只是不会自动更新。
+
 ## 装完是什么样
 
 - 新建会话时，agent 列表里多一个「文学专家」
