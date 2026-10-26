@@ -42,10 +42,10 @@
 ```text
 请帮我安装 DSH 插件「中文去AI味」。
 
-仓库：https://github.com/<owner>/chinese-deai
+仓库：https://github.com/moxiaolong/chinese-deai
 
 步骤：
-1. 调用 plugin_manager，action=install_bundle，target 填上面的仓库地址（也可以写成 github:<owner>/chinese-deai）。
+1. 调用 plugin_manager，action=install_bundle，target 填上面的仓库地址（也可以写成 github:moxiaolong/chinese-deai）。
 2. 装完调用 plugin_manager，action=list_plugins，确认 preset-deai 和 preset-standard 两行的 fiberPhase 都是 active。
 3. 有 diagnostic 就原样贴给我，先别继续。
 4. 装好后提醒我新开一个会话——旧会话在启动时就锁定了插件版本，拿不到新东西。
@@ -57,7 +57,7 @@ plugin_manager，action=remove_bundle，target=dsh-plugin-chinese-deai
 ### 手动装
 
 ```bash
-dsh plugin --profile desktop add github:<owner>/chinese-deai
+dsh plugin --profile desktop add github:moxiaolong/chinese-deai
 ```
 
 `desktop` 换成你的 profile 名：桌面应用是 `desktop`，网页版是 `web`，命令行是 `tui`。装完重启应用。
