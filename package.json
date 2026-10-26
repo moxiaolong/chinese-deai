@@ -1,0 +1,20 @@
+{
+  "name": "dsh-plugin-chinese-deai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "中文去AI味：给 DeepSeek Harness 加一个写中文的独立 agent，并把默认 agent 的正文写作交给它。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deai",
+    "chinese",
+    "writing"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
